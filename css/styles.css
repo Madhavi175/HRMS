@@ -1,0 +1,57 @@
+/* Sticky Navigation */
+.header-main {
+    background-color: #343a40; /* Darker background for the header */
+    padding: 10px 15px;
+    color: white;
+}
+.header-main.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.sidebar-menu {
+    background-color: #23272b; /* Dark background for sidebar */
+    color: #ffffff;
+    height: 100vh;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+.sidebar-menu .menu {
+    padding: 15px;
+}
+.sidebar-menu .menu a {
+    color: #b8c7ce; /* Lighter color for menu items */
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.sidebar-menu .menu a:hover {
+    background-color: #1d2124;
+    color: white;
+}
+.sidebar-menu .menu i {
+    margin-right: 10px;
+}
+
+/* Main Content Area */
+.page-container {
+    margin-left: 250px; /* Margin to align content next to sidebar */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for content area */
+}
+
+/* Sidebar Toggle Button */
+.sidebar-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Additional Styling */
+.clearfix {
+    clear: both;
+}

@@ -1,0 +1,217 @@
+
+
+<head>
+    <link rel='stylesheet' id='e-animations-css'
+    href='../wp-content/plugins/elementor/assets/lib/animations/animations.mince54.css?ver=3.19.3' media='all' />
+    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" type="application/rss+xml" title="LMS &raquo; Feed"
+        href="https://eduquest.itech-theme.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="LMS &raquo; Comments Feed"
+        href="https://eduquest.itech-theme.com/comments/feed/" />
+</head>
+
+
+
+
+
+
+
+
+<nav class="bg-white shadow-lg h-screen fixed top-0 left-0 min-w-[240px] py-6 px-4 font-[sans-serif] overflow-auto">
+    <ul>
+      <li>
+        <a href="javascript:void(0)"
+          class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+          Dashboard
+        </a>
+      </li>
+    </ul>
+
+    <div class="mt-4">
+      <h6 class="text-blue-600 text-sm font-bold px-4">Information</h6>
+      <ul class="mt-2">
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Audience
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Posts
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Schedules
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Promote
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <h6 class="text-blue-600 text-sm font-bold px-4">Income</h6>
+      <ul class="mt-2">
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Earnings and taxes
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Refunds
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Declines
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Payouts Details
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <h6 class="text-blue-600 text-sm font-bold px-4">Actions</h6>
+      <ul class="mt-2">
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Profile
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"
+            class="text-black hover:text-blue-600 text-[15px] block hover:bg-blue-50 rounded px-4 py-2.5 transition-all">
+            Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  ///////////////////////////////////////////
+  <?php include('header.php'); ?>
+<style>
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+    .scrollable-container {
+        max-height: 500px;
+        overflow-y: auto;
+        padding: 10px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        margin-top: 10px;
+    }
+</style>
+<div class="scrollable-container">
+<div class="form-container">
+<h1><b><center>Bank Details</center></b></h1>
+    <form action="save_payment.php" method="post">
+        <label for="number">Employee ID:</label>
+        <input type="number" name="EmployeeId" id="EmployeeId" />
+            <!-- Populate employee list dynamically from the employees_data table -->
+            <?php
+            // Assuming you have a connection to your database
+            // $conn = new mysqli('localhost', 'root', '', 'hr');
+            // $result = $conn->query("SELECT EmployeeId, FirstName, LastName FROM employees_data");
+
+            // while ($row = $result->fetch_assoc()) {
+            //     echo "<option value='" . $row['EmployeeId'] . "'>" . $row['FirstName'] . " " . $row['LastName'] . " (ID: " . $row['EmployeeId'] . ")</option>";
+            // }
+            // ?>
+
+      <label for="name">Name:</label>
+        <input type="text" name="Name" id="Name" required>
+
+        <label for="BankName">Bank Name:</label>
+        <input type="text" name="BankName" id="BankName" required>
+
+        <label for="AccountNumber">Account Number:</label>
+        <input type="text" name="AccountNumber" id="AccountNumber" required>
+
+        <label for="IFSCCode">IFSC Code:</label>
+        <input type="text" name="IFSCCode" id="IFSCCode" required>
+
+        <label for="BranchName">Branch Name:</label>
+        <input type="text" name="BranchName" id="BranchName" required>
+
+        <label for="PANCard">PAN Card Number:</label>
+        <input type="text" name="PANCard" id="PANCard" required>
+
+        <label for="AadharCard">Aadhar Card Number:</label>
+        <input type="text" name="AadharCard" id="AadharCard" required>
+
+        <input type="submit" value="Save Payment Details">
+    </form>
+</div>
+
+<?php include('footer.php'); ?>
