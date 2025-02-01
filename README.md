@@ -1,6 +1,6 @@
 # Human-Resource-Managment-System-HRMS-in-PHP
 Human resource managment system is simple mini project built  using PHP
-![mainpage](https://"C:\Users\HP\Pictures\Screenshots\Screenshot (10).png")
+![mainpage](https://C:\Users\HP\Pictures\Screenshots\Screenshot (10).png)
 </br>
 The aim of this Human Resource Management System project is to build a system that will help a company
 manage its human resources. The Human Resource Management System will have a project module. All
